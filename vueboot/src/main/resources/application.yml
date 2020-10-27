@@ -1,0 +1,14 @@
+server:
+  port: 8089
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/SpringBoot?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: ming2501
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  type-aliases-package: com.myvueboot.boot.entity.Book
+  configuration:
+    map-underscore-to-camel-case: true

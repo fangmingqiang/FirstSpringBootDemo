@@ -11,4 +11,8 @@ import org.springframework.stereotype.Repository;
 public interface LoginMapper {
     @Select("select * from logintable where username = #{username} and password = #{password}")
     public LoginTable login(User user);
+
+    @Select("select * from logintable where username = #{username}")
+    public LoginTable getUser(String username);
+
 }
